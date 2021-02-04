@@ -4,8 +4,6 @@ import Note from "../Note";
 
 const NotesViewer = ({ notes }) => {
 
-  // const notes = useStickyState([], "notes");
-
   return (
     <>
       <Button content="Nouvelle note" />

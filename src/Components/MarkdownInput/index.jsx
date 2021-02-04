@@ -5,20 +5,6 @@ import NoteDisplay from "../NoteDisplay";
 import Button from "../Button";
 
 const MarkDownInput = ({ handleSave }) => {
-  // const useStateLocalStorage = (localStorageKey) => {
-  //   const [element, setElement] = useState(
-  //     localStorage.getItem(localStorageKey) || ""
-  //   );
-  //   useEffect(() => {
-  //     localStorage.setItem(localStorageKey, element);
-  //   }, [element]);
-
-  //   return [element, setElement];
-  // };
-
-  // const [title, setTitle] = useStateLocalStorage("noteTitle");
-  // const [content, setContent] = useStateLocalStorage("noteContent");
-
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
@@ -26,7 +12,6 @@ const MarkDownInput = ({ handleSave }) => {
     const note = { title, content };
     handleSave(note)    
   };
-
 
   return (
     <>

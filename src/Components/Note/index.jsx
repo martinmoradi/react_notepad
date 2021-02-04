@@ -7,7 +7,7 @@ const Note = ({ title, content }) => {
   const TruncateContent = () => {
     textContent = [];
     splitContent.forEach((word, index) => {
-      if (index < 15) {
+      if (index < 15 && index !== 14) {
         textContent.push(word);
       }
       if (index === 14) {
